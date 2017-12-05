@@ -1,0 +1,30 @@
+#cf2 {
+  position:relative;
+  margin:0 auto;
+}
+#cf2 img {
+  width: 100%;
+  position:absolute;
+  left:0;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+#cf2 img.transparent {
+  transform: scale(0);
+}
+
+.pure-content {
+    margin: 0 auto;
+    padding: 0 2em;
+    max-width: 800px;
+    margin-bottom: 50px;
+    line-height: 1.6em;
+}
+
+.lock {
+    width: 15%!important;
+    margin: 5%;
+}
