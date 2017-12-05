@@ -29,4 +29,5 @@
 .lock {
     width: 15%!important;
     margin: 5%;
+    position: absolute;
 }

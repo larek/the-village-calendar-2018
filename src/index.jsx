@@ -7,10 +7,12 @@ class App extends React.Component{
   }
 
   change(e){
-    console.log(e.dataset.lock);
-    let children = e.currentTarget.children;
-    children[0].classList.toggle('transparent');
-    children[1].classList.toggle('transparent');
+    console.log(e.currentTarget.dataset.lock);
+    if(!e.currentTarget.dataset.lock){
+      let children = e.currentTarget.children;
+      children[0].classList.toggle('transparent');
+      children[1].classList.toggle('transparent');
+    }
   }
 
   render(){
