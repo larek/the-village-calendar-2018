@@ -15,27 +15,26 @@ class App extends React.Component{
 
   render(){
     return(
-          <div className="section group">
-            <div className="col span_1_of_3">
-              <div id="cf2" className="shadow" onClick={this.change.bind(this)} data-day='11'>
-              <img id="front" src="http://reports.larek.pro/api/the-village-calendar-2018/images/day-11.svg" className='img-fluid' />
-              <img id="back" src="http://reports.larek.pro/api/the-village-calendar-2018/images/day-11-back.svg" className='img-fluid transparent' />
-              </div>
+        <div className="stk-grid" data-ce-tag="grid">
+            <div className="stk-grid-col" data-ce-tag="grid-col" data-col-width="2">
+                <div id="cf2" className="shadow" onClick={this.change.bind(this)} data-day='11'>
+                  <img id="front" src="http://reports.larek.pro/api/the-village-calendar-2018/images/day-11.svg" className='img-fluid' />
+                  <img id="back" src="http://reports.larek.pro/api/the-village-calendar-2018/images/day-11-back.svg" className='img-fluid transparent' />
+                </div>
             </div>
-            <div className="col span_1_of_3">
-              <div id="cf2" className="shadow" data-day='12'>
-              <img id="front" src="http://reports.larek.pro/api/the-village-calendar-2018/images/day-12.svg" className='img-fluid' />
-              <img id="back" src="http://reports.larek.pro/api/the-village-calendar-2018/images/day-11-back.svg" className='img-fluid transparent' />
-              </div>
+            <div className="stk-grid-col" data-ce-tag="grid-col" data-col-width="2">
+                <div id="cf2" className="shadow" onClick={this.change.bind(this)} data-day='11'>
+                  <img id="front" src="http://reports.larek.pro/api/the-village-calendar-2018/images/day-11.svg" className='img-fluid' />
+                  <img id="back" src="http://reports.larek.pro/api/the-village-calendar-2018/images/day-11-back.svg" className='img-fluid transparent' />
+                </div>
             </div>
-            <div className="col span_1_of_3">
-              <div id="cf2" className="shadow" data-day='13' data-lock>
-              <img id="front" src="http://reports.larek.pro/api/the-village-calendar-2018/images/day-13.svg" className='img-fluid' />
-              <img id="back" src="http://reports.larek.pro/api/the-village-calendar-2018/images/day-11-back.svg" className='img-fluid transparent' />
-              <img src="http://reports.larek.pro/api/the-village-calendar-2018/images/lock.svg" className='lock' alt="" />
+            <div className="stk-grid-col stk-grid-col_last" data-ce-tag="grid-col" data-col-width="2">
+                <div id="cf2" className="shadow" onClick={this.change.bind(this)} data-day='11'>
+                  <img id="front" src="http://reports.larek.pro/api/the-village-calendar-2018/images/day-11.svg" className='img-fluid' />
+                  <img id="back" src="http://reports.larek.pro/api/the-village-calendar-2018/images/day-11-back.svg" className='img-fluid transparent' />
+                </div>
             </div>
-          </div>
-          </div>
+        </div>
       )
   }
 }
