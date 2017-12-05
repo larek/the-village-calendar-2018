@@ -1,16 +1,18 @@
 #cf2 {
   position:relative;
   margin:0 auto;
+  cursor: pointer;
 }
 #cf2 img {
   width: 100%;
   position:absolute;
   left:0;
-  -webkit-transition: all 200ms ease-in-out;
-  -moz-transition: all 200ms ease-in-out;
-  -o-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
+  -webkit-transition: transform 200ms, position 0s ease-in-out;
+  -moz-transition: transform 200ms, position 0s ease-in-out;
+  -o-transition: transform 200ms, position 0s ease-in-out;
+  transition: transform 200ms, position 0s ease-in-out;
 }
+
 
 #cf2 img.transparent {
   transform: scale(0);
