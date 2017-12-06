@@ -24,7 +24,7 @@ class App extends React.Component{
 
   render(){
     return(
-        <div className="stk-grid" data-ce-tag="grid">
+        <div>
           {
             Days.map(item => {
               return(
