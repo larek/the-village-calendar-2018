@@ -28,8 +28,8 @@ class App extends React.Component{
           {
             Days.map(item => {
               return(
-                  <div className="stk-grid-col" data-ce-tag="grid-col" data-col-width="2">
-                      <div id="cf2" className="shadow" onClick={this.change.bind(this)} >
+                  <div className="col-4">
+                      <div id="cf2" onClick={this.change.bind(this)} >
                         <img id="front" src={"http://reports.larek.pro/api/the-village-calendar-2018/images/day-" + item.day + ".svg"} className='img-fluid' />
                         <img id="back" src="http://reports.larek.pro/api/the-village-calendar-2018/images/day-11-back.svg" className='img-fluid transparent' />
                       </div>
