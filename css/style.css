@@ -1,10 +1,15 @@
 #cf2 {
-  position:relative;
-  margin:0 auto;
-  cursor: pointer;
+    position: relative;
+    margin: 0 auto;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
 }
+
 #cf2 img {
-  width: 100%;
+  width: 80%;
   left:0;
   -webkit-transition: transform 200ms, position 0s ease-in-out;
   -moz-transition: transform 200ms, position 0s ease-in-out;
