@@ -2,10 +2,8 @@
     position: relative;
     margin: 0 auto;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 #cf2 img {
@@ -33,7 +31,7 @@
 
 .lock {
     width: 15%!important;
-    margin: 5%;
+    margin: 5% 0 0 15%;
     position: absolute;
 }
 
