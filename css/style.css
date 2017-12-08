@@ -1,6 +1,6 @@
 /*Reset*/
 body{
-    background: url(http://reports.larek.pro/api/the-village-calendar-2018/images/background.svg) #eff7f9 no-repeat;
+    background: url(http://reports.larek.pro/api/the-village-calendar-2018/images/background-3.svg) #eff7f9 no-repeat;
     background-size: 100%;
 }
 
@@ -10,6 +10,18 @@ body{
 
 .row.post-cover-row {
     background: transparent;
+}
+
+.post-cover {
+    background: transparent;
+}
+
+.stk-post.stk-theme_2393.stk-layout_6{
+  background: transparent;
+}
+
+.pseudosidebar{
+  display: none;
 }
 
 /*Calendar*/
