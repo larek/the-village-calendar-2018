@@ -24,6 +24,27 @@ body{
   display: none;
 }
 
+.post .post-cover {
+    width: 100%;
+    text-align: center;
+}
+
+.post-cover_26.post-cover_26-style_2 .cover-wrap .share-buttons-bar {
+    position: inherit;
+}
+
+h1.article-title {
+    display: none;
+}
+
+p.article-lead {
+    display: none;
+}
+
+.row.post-body {
+    background: transparent;
+}
+
 /*Calendar*/
 
 #cf2 {
