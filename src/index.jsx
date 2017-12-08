@@ -10,10 +10,14 @@ class App extends React.Component{
     }
   }
 
+  redirect(url){
+    window.open(url, '_blank');
+  }
+
   change(e){
-    if(e.currentTarget.dataset.display == "visible"){
-      console.log(2);
-      let children = e.currentTarget.children;
+    let clickDay = e.currentTarget;
+    if(clickDay.dataset.display == "visible"){
+      let children = clickDay.children;
       children[0].classList.toggle('transparent');
       children[1].classList.toggle('transparent');
     }
@@ -29,7 +33,7 @@ class App extends React.Component{
                       <div id='cf2' onClick={this.change.bind(this)} data-display={item.day > 15 ? 'lock' : 'visible'}>
                         { item.day > 15 ? <img src="http://reports.larek.pro/api/the-village-calendar-2018/images/lock.svg" className="lock" alt=""/> : '' }
                         <img id="front" src={"http://reports.larek.pro/api/the-village-calendar-2018/images/day-" + item.day + ".svg"} />
-                        <img id="back" src="http://reports.larek.pro/api/the-village-calendar-2018/images/day-11-back.svg" className='transparent' />
+                        <img id="back" onClick={this.redirect.bind(this,'https://vk.com')} src={"http://reports.larek.pro/api/the-village-calendar-2018/images/day-" + item.day + "-back.svg"} className='transparent' />
                       </div>
                   </div>
                 );
