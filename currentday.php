@@ -1,0 +1,1 @@
+<?= json_encode(['currentDay' => (int)date("d")]);
