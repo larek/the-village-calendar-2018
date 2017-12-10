@@ -45,6 +45,10 @@ p.article-lead {
     background: transparent;
 }
 
+.cover-image{
+  display: none;
+}
+
 /*Calendar*/
 
 #cf2 {
