@@ -62,10 +62,10 @@ p.article-lead {
 #cf2 img {
   width: 80%;
   left:0;
-  -webkit-transition: transform 200ms, position 0s ease-in-out;
-  -moz-transition: transform 200ms, position 0s ease-in-out;
-  -o-transition: transform 200ms, position 0s ease-in-out;
-  transition: transform 200ms, position 0s ease-in-out;
+  -webkit-transition: transform 200ms ease-in-out;
+  -moz-transition: transform 200ms ease-in-out;
+  -o-transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
 }
 
 
