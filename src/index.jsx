@@ -30,10 +30,13 @@ class App extends React.Component{
             Days.map(item => {
               return(
                   <div className="col-4">
-                      <div id='cf2' onClick={this.change.bind(this)} data-display={item.day > 22 ? 'lock' : 'visible'}>
-                        { item.day > 22 ? <img src="http://reports.larek.pro/api/the-village-calendar-2018/images/lock.svg" className="lock" alt=""/> : '' }
+                      <div id='cf2' onClick={this.change.bind(this)} data-display={item.day > 15 ? 'lock' : 'visible'}>
+                        { item.day > 15 ? <img src="http://reports.larek.pro/api/the-village-calendar-2018/images/lock.svg" className="lock" alt=""/> : '' }
                         <img id="front" src={"http://reports.larek.pro/api/the-village-calendar-2018/images/day-" + item.day + ".svg"} />
                         <img id="back" onClick={this.redirect.bind(this, item.link)} src={"http://reports.larek.pro/api/the-village-calendar-2018/images/day-" + item.day + "-back.svg"} className='transparent' />
+                        {
+                          item.day == 15 ? <img src="http://reports.larek.pro/api/the-village-calendar-2018/images/rays.svg" style={{width:'100%', position: 'absolute', margin: '-30px 0px', zIndex: '-1'}} className='rays' alt=""/> : ''
+                        }
                       </div>
                   </div>
                 );
