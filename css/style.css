@@ -95,6 +95,43 @@ p.article-lead {
   display: inline-block;
 }
 
+@media only screen and (min-width: 1280px){
+  .row.post-body{
+    margin-top:100px;
+  }
+}
+
+@media only screen and (min-width: 1400px){
+  .row.post-body{
+    margin-top:150px;
+  }
+}
+
+
+@media only screen and (min-width: 1500px){
+  .row.post-body{
+    margin-top:330px;
+  }
+}
+
+@media only screen and (min-width: 1600px){
+  .row.post-body{
+    margin-top:390px;
+  }
+}
+
+@media only screen and (min-width: 1700px){
+  .row.post-body{
+    margin-top:430px;
+  }
+}
+
+@media only screen and (min-width: 1800px){
+  .row.post-body{
+    margin-top:550px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     [class*="col-"] {
