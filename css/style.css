@@ -4,9 +4,9 @@ body{
     background-size: 100%;
 }
 
-.row.header {
+/*.row.header {
     background: transparent;
-}
+}*/
 
 .row.post-cover-row {
     background: transparent;
@@ -47,6 +47,14 @@ p.article-lead {
 
 .cover-image{
   display: none;
+}
+
+.row.header {
+    background: white;
+}
+
+.page-content {
+    padding-top: 0px;
 }
 
 /*Calendar*/
