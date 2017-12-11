@@ -78,9 +78,9 @@ class App extends React.Component{
   }
 }
 
-// let ww = window.innerWidth;
-// let k = ww < 1280 ? ww < 1040 ? 17 : 13 : 12;
-// let backgroundMargin = ww / k;
-// document.body.style.backgroundPosition = "0px " + " "+ -backgroundMargin + "px";
+let ww = window.innerWidth;
+let k = ww < 1280 ? ww < 1040 ? 17 : 13 : 12;
+let backgroundMargin = ww / k;
+document.body.style.backgroundPosition = "0px " + " "+ -backgroundMargin + "px";
 
 ReactDOM.render(<App />, document.getElementById('calendar-app'));
