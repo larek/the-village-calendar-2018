@@ -61,9 +61,14 @@ class App extends React.Component{
             Days.map(item => {
               return(
                   <div className="col-4">
-                    <div id="cf2">
-                      <img onClick={this.redirect.bind(this, item.link)} src={"http://reports.larek.pro/api/the-village-calendar-2018/images/day-" + item.day + "-back.svg"} className='image-fluid' alt=""/>
-                    </div>
+                      <div id='cf2' onClick={this.change.bind(this)} data-display={item.day > this.state.currentDay ? 'lock' : 'visible'} data-status={window.localStorage && localStorage[item.day] ? 'open' : 'close'} data-day={item.day}>
+                        { item.day > this.state.currentDay ? <img src="http://reports.larek.pro/api/the-village-calendar-2018/images/lock.svg" className="lock" alt=""/> : '' }
+                        <img id="front" src={"http://reports.larek.pro/api/the-village-calendar-2018/images/day-" + item.day + ".svg"} className={window.localStorage && localStorage[item.day] ? 'transparent' : ''} />
+                        <img id="back" onClick={this.redirect.bind(this, item.link)} src={item.day > 31 ? 'http://placehold.it/200x200' : "http://reports.larek.pro/api/the-village-calendar-2018/images/day-" + item.day + "-back.svg"} className={window.localStorage && localStorage[item.day] ? '' : 'transparent'} />
+                        {
+                          item.day == this.state.currentDay ? <img src="http://reports.larek.pro/api/the-village-calendar-2018/images/rays.svg" style={{width:'100%', position: 'absolute', margin: '-30px 0px', zIndex: '-1'}} className='rays' alt=""/> : ''
+                        }
+                      </div>
                   </div>
                 );
             })
