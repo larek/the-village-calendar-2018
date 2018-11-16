@@ -1,2 +1,4 @@
 node_modules
-js/public.js
+dist
+.DS_Store
+

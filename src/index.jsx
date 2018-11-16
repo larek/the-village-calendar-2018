@@ -19,12 +19,11 @@ class App extends React.Component{
 
   getDayServer(){
     let xhr = new XMLHttpRequest();
-    xhr.open('GET', 'http://reports.larek.pro/api/the-village-calendar-2018/currentday.php', true);
+    xhr.open('GET', '/currentday.php', true);
     xhr.send(null);
     xhr.onload = r => {
       if(r.currentTarget.status == 200){
         let response = JSON.parse(r.currentTarget.response);
-        console.log(response);
         this.setState({currentDay : response.currentDay});
       }else{
         throw 'Error with getting server day';
@@ -58,11 +57,11 @@ class App extends React.Component{
     return(
         <div>
           {
-            Days.map(item => {
+            Days.map((item, key) => {
               return(
-                  <div className="col-4">
+                  <div key={key} className="col-4">
                     <div id="cf2">
-                      <img onClick={this.redirect.bind(this, item.link)} src={"http://reports.larek.pro/api/the-village-calendar-2018/images/day-" + item.day + "-back.svg"} className='image-fluid' alt=""/>
+                      <img onClick={this.redirect.bind(this, item.link)} src={"/images/day-" + item.day + "-back.svg"} className='image-fluid' alt=""/>
                     </div>
                   </div>
                 );
