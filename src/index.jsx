@@ -19,7 +19,7 @@ class App extends React.Component{
 
   getDayServer(){
     let xhr = new XMLHttpRequest();
-    xhr.open('GET', '/currentday.php', true);
+    xhr.open('GET', 'https://the-village-calendar.larek.pro/currentday.php', true);
     xhr.send(null);
     xhr.onload = r => {
       if(r.currentTarget.status == 200){
@@ -61,7 +61,7 @@ class App extends React.Component{
               return(
                   <div key={key} className="col-4">
                     <div id="cf2">
-                      <img onClick={this.redirect.bind(this, item.link)} src={"/images/day-" + item.day + "-back.svg"} className='image-fluid' alt=""/>
+                      <img onClick={this.redirect.bind(this, item.link)} src={"https://the-village-calendar.larek.pro/images/day-" + item.day + "-back.svg"} className='image-fluid' alt=""/>
                     </div>
                   </div>
                 );
